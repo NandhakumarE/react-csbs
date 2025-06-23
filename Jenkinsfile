@@ -11,7 +11,7 @@ pipeline {
             steps{
                 sh '''
                     echo "Linting"
-                    npm lint
+                    npm run lint
                 '''
             }
         }
