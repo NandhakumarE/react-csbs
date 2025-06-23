@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { CiCircleCheck } from "react-icons/ci";
 import { FaRegCircle } from "react-icons/fa";
 //  props = {id, title, completed}
@@ -12,5 +13,10 @@ const TodoItem = (props) => {
     </div>
   );
 };
+
+TodoItem.propTypes = {
+  title: PropTypes.string,
+  completed: PropTypes.bool
+}
 
 export default TodoItem;

@@ -9,7 +9,7 @@ const EachTodo = () => {
     getTodoList(id).then((data) => {
       setTodo(data);
     });
-  }, []);
+  }, [id]);
 
   return <div>{JSON.stringify(todo)}</div>;
 };
